@@ -1,0 +1,30 @@
+{
+    "name": "confrariaweb/laravel-file",
+    "description": "File package Laravel",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Rafael Zingano",
+            "email": "confrariaweb@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ConfrariaWeb\\File\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ConfrariaWeb\\File\\Providers\\FileServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
