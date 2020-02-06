@@ -1,5 +1,6 @@
 {
     "name": "confrariaweb/laravel-file",
+    "version": "dev-master",
     "description": "File package Laravel",
     "keywords": [
         "framework",
