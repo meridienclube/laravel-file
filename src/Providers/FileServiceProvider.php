@@ -7,22 +7,13 @@ use Illuminate\Support\ServiceProvider;
 class FileServiceProvider extends ServiceProvider
 {
 
-    /**
-     * Bootstrap services.
-     *
-     * @return void
-     */
     public function boot()
     {
         //$this->loadViewsFrom(__DIR__ . '/../Views', 'file');
         $this->loadMigrationsFrom(__DIR__ . '/../Databases/Migrations');
+        $this->publishes([__DIR__ . '/../../config/cw_file.php' => config_path('cw_file.php')], 'cw_file');
     }
 
-    /**
-     * Register services.
-     *
-     * @return void
-     */
     public function register()
     {
 
